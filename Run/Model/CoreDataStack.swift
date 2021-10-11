@@ -9,7 +9,7 @@ import CoreData
 
 class CoreDataStack {
     static let persistentContainer: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "RunDemo")
+        let container = NSPersistentContainer(name: "Model")
         container.loadPersistentStores { (_, error) in
             if let error = error as NSError? {
                 fatalError("Unresolved error \(error), \(error.userInfo)")

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		045CE36A2711EFC600878F95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045CE3692711EFC600878F95 /* Assets.xcassets */; };
 		04C7986F2713C0DD000A98EC /* RunPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7986E2713C0DD000A98EC /* RunPageVC.swift */; };
+		04CE07BD271459CA0080DCBB /* StopRunVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE07BC271459CA0080DCBB /* StopRunVC.swift */; };
 		059278E438D39681B073EEFA /* Pods_RunTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0BBA4EAA6E65CCD8B076D46 /* Pods_RunTests.framework */; };
 		2DFF1A54E85FAE2A49C6662F /* Pods_Run.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B86E00671E5BC17B4030E6D /* Pods_Run.framework */; };
 		C2F559057BCD0E8CE819F0C7 /* Pods_Run_RunUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B193F4B5B335B1E0B149B9A6 /* Pods_Run_RunUITests.framework */; };
@@ -17,7 +18,6 @@
 		F8A5A38226FF0DDD000446D3 /* MulticolorPolyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A5A37E26FF0DDD000446D3 /* MulticolorPolyline.swift */; };
 		F8A5A38326FF0DDD000446D3 /* StoryboardSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A5A37F26FF0DDD000446D3 /* StoryboardSupport.swift */; };
 		F8A5A38726FF0E65000446D3 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A5A38526FF0E65000446D3 /* CoreDataStack.swift */; };
-		F8A5A38826FF0E65000446D3 /* RunModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A5A38626FF0E65000446D3 /* RunModel.swift */; };
 		F8A5A38B26FF0E90000446D3 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F8A5A38926FF0E90000446D3 /* Model.xcdatamodeld */; };
 		F8A5A39126FF1000000446D3 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A5A38D26FF1000000446D3 /* FirstViewController.swift */; };
 		F8A5A39226FF1000000446D3 /* RunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A5A38E26FF1000000446D3 /* RunViewController.swift */; };
@@ -54,6 +54,7 @@
 		024749D8211F8F18A2AC0B1A /* Pods-RunTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunTests.release.xcconfig"; path = "Target Support Files/Pods-RunTests/Pods-RunTests.release.xcconfig"; sourceTree = "<group>"; };
 		045CE3692711EFC600878F95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04C7986E2713C0DD000A98EC /* RunPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunPageVC.swift; sourceTree = "<group>"; };
+		04CE07BC271459CA0080DCBB /* StopRunVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopRunVC.swift; sourceTree = "<group>"; };
 		4B86E00671E5BC17B4030E6D /* Pods_Run.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Run.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C4C75B9D6AFA0E2950906F2 /* Pods-Run-RunUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Run-RunUITests.debug.xcconfig"; path = "Target Support Files/Pods-Run-RunUITests/Pods-Run-RunUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		750844E22D5C0CDE177CD11F /* Pods-Run.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Run.release.xcconfig"; path = "Target Support Files/Pods-Run/Pods-Run.release.xcconfig"; sourceTree = "<group>"; };
@@ -67,7 +68,6 @@
 		F8A5A37E26FF0DDD000446D3 /* MulticolorPolyline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MulticolorPolyline.swift; sourceTree = "<group>"; };
 		F8A5A37F26FF0DDD000446D3 /* StoryboardSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardSupport.swift; sourceTree = "<group>"; };
 		F8A5A38526FF0E65000446D3 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
-		F8A5A38626FF0E65000446D3 /* RunModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunModel.swift; sourceTree = "<group>"; };
 		F8A5A38A26FF0E90000446D3 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		F8A5A38D26FF1000000446D3 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		F8A5A38E26FF1000000446D3 /* RunViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunViewController.swift; sourceTree = "<group>"; };
@@ -153,7 +153,6 @@
 			isa = PBXGroup;
 			children = (
 				F8A5A38526FF0E65000446D3 /* CoreDataStack.swift */,
-				F8A5A38626FF0E65000446D3 /* RunModel.swift */,
 				F8A5A38926FF0E90000446D3 /* Model.xcdatamodeld */,
 			);
 			path = Model;
@@ -165,6 +164,7 @@
 				F8A5A38D26FF1000000446D3 /* FirstViewController.swift */,
 				F8A5A38E26FF1000000446D3 /* RunViewController.swift */,
 				F8A5A38F26FF1000000446D3 /* EndViewController.swift */,
+				04CE07BC271459CA0080DCBB /* StopRunVC.swift */,
 				F8A5A39526FF1050000446D3 /* HomePageVC.swift */,
 				04C7986E2713C0DD000A98EC /* RunPageVC.swift */,
 			);
@@ -484,10 +484,10 @@
 				F8A5A39126FF1000000446D3 /* FirstViewController.swift in Sources */,
 				F8A5A38B26FF0E90000446D3 /* Model.xcdatamodeld in Sources */,
 				F8A5A38226FF0DDD000446D3 /* MulticolorPolyline.swift in Sources */,
+				04CE07BD271459CA0080DCBB /* StopRunVC.swift in Sources */,
 				04C7986F2713C0DD000A98EC /* RunPageVC.swift in Sources */,
 				F8A5A39226FF1000000446D3 /* RunViewController.swift in Sources */,
 				F8A5A38326FF0DDD000446D3 /* StoryboardSupport.swift in Sources */,
-				F8A5A38826FF0E65000446D3 /* RunModel.swift in Sources */,
 				F8A5A39626FF1050000446D3 /* HomePageVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,6 +15,11 @@ class HomePageVC: UIViewController,UIViewControllerTransitioningDelegate {
     let transition = BubbleTransition()
     let interactiveTransition = BubbleInteractiveTransition()
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
        if let controller = segue.destination as? RunPageVC{
             controller.transitioningDelegate = self

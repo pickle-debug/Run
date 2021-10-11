@@ -41,13 +41,13 @@ class FirstViewController: UIViewController, UIViewControllerTransitioningDelega
     }
 
     
-    override func viewDidLoad() {
-           super.viewDidLoad()
-        let RunButton = UIButton(type: .custom)
-        RunButton.frame = CGRect(x: 160,y: 100, width: 50, height: 50)
-        RunButton.layer.cornerRadius = 0.5 * RunButton.bounds.size.width
-        view.addSubview(RunButton)
-       }
+//    override func viewDidLoad() {
+//           super.viewDidLoad()
+//        let RunButton = UIButton(type: .custom)
+//        RunButton.frame = CGRect(x: 160,y: 100, width: 50, height: 50)
+//        RunButton.layer.cornerRadius = 0.5 * RunButton.bounds.size.width
+//        view.addSubview(RunButton)
+//       }
 
 //    func initBtn() {
 ////        let screenSize = UIScreen.main.bounds.size
