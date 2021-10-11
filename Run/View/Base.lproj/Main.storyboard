@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home PageVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomePageVC" customModule="Run" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAn-jA-vJn">
+                                <rect key="frame" x="177" y="802" width="60" height="60"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="8t5-JP-x7g"/>
+                                    <constraint firstAttribute="height" constant="60" id="KUy-o7-CjP"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="跑步">
+                                    <color key="titleColor" name="gray"/>
+                                    <color key="titleShadowColor" name="gray"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="YHx-Ss-Obk" kind="modal" id="gvR-tq-LIm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tAn-jA-vJn" secondAttribute="trailing" constant="177" id="bfi-ln-pDj"/>
+                            <constraint firstItem="tAn-jA-vJn" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="epb-sB-G5x"/>
+                            <constraint firstItem="tAn-jA-vJn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="177" id="z39-hF-Axr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="RunButton" destination="tAn-jA-vJn" id="tBL-Gh-6yd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.04347826086958" y="79.6875"/>
+        </scene>
+        <!--Run PageVC-->
+        <scene sceneID="AxS-4Y-X37">
+            <objects>
+                <viewController id="YHx-Ss-Obk" customClass="RunPageVC" customModule="Run" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RAe-N9-czg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="88" translatesAutoresizingMaskIntoConstraints="NO" id="yeL-Qi-ijc">
+                                <rect key="frame" x="69" y="81" width="276" height="80"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="M8J-Ob-krL">
+                                        <rect key="frame" x="0.0" y="0.0" width="94" height="80"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ce-c7-zEY">
+                                                <rect key="frame" x="0.0" y="0.0" width="94" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="配速" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEu-5R-HHz">
+                                                <rect key="frame" x="26.5" y="56" width="41" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" name="gray"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9xm-vc-z3j">
+                                        <rect key="frame" x="182" y="0.0" width="94" height="80"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyb-0c-EZP">
+                                                <rect key="frame" x="0.0" y="0.0" width="94" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37f-vE-4vc">
+                                                <rect key="frame" x="26.5" y="56" width="41" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" name="gray"/>
+                                                <color key="highlightedColor" name="gray"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTP-yX-yU6">
+                                <rect key="frame" x="177" y="748.5" width="60" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="KX4-bS-XR2"/>
+                                    <constraint firstAttribute="width" constant="60" id="SPv-qk-VgT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="pause.circle.fill" catalog="system"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="closeAction:" destination="YHx-Ss-Obk" eventType="touchUpInside" id="6IS-rj-Ps7"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="j3T-1F-6jx">
+                                <rect key="frame" x="116" y="394" width="182" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXY-rt-2sF">
+                                        <rect key="frame" x="0.0" y="0.0" width="182" height="84"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="70"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="公里" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4r-cK-FHK">
+                                        <rect key="frame" x="60.5" y="92" width="61" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" name="gray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2qb-DP-qdY"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="JTP-yX-yU6" firstAttribute="leading" secondItem="2qb-DP-qdY" secondAttribute="leading" constant="177" id="3rE-JE-ehJ"/>
+                            <constraint firstItem="2qb-DP-qdY" firstAttribute="trailing" secondItem="JTP-yX-yU6" secondAttribute="trailing" constant="177" id="HkR-7Z-xck"/>
+                            <constraint firstItem="JTP-yX-yU6" firstAttribute="bottom" secondItem="2qb-DP-qdY" secondAttribute="bottom" id="dZg-dq-UDK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="controlButton" destination="JTP-yX-yU6" id="uhE-oQ-0Vo"/>
+                        <outlet property="distanceLabel" destination="aXY-rt-2sF" id="yW4-pI-OGl"/>
+                        <outlet property="speedLabel" destination="uyb-0c-EZP" id="fAi-xK-2I8"/>
+                        <outlet property="timeLabel" destination="0ce-c7-zEY" id="f1W-ft-TaL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CPR-bk-3HW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="915.94202898550736" y="79.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pause.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="跑步" width="200" height="200"/>
+        <namedColor name="gray">
+            <color red="0.57599997520446777" green="0.58399999141693115" blue="0.59200000762939453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
