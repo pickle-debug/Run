@@ -29,23 +29,11 @@ class RunPageVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        controlButton.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 4)
-
-        // Do any additional setup after loading the view.
+        startRun()
     }
-    
-//    @IBAction func closeAction(_ sender: AnyObject) {
-//            self.dismiss(animated: true, completion: nil)
-//            interactiveTransition?.finish()
-//    }
-//
     @IBAction func flipButton() {
-        if(controlButton.titleLabel?.text == "开始跑步") {
-            startRun()
-            controlButton.setTitle("暂停", for: .normal)
-        } else {
             stopRun()
-            controlButton.setTitle("开始跑步", for: .normal)
+            controlButton.setTitle("跑步", for: .normal)
             let alertController = UIAlertController(title: "跑完了？",
                                                     message: "你想结束跑步吗？",
                                                     preferredStyle: .actionSheet)
@@ -61,7 +49,6 @@ class RunPageVC: UIViewController {
             })
 
             present(alertController, animated: true)
-        }
     }
     
     private func startRun(){

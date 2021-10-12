@@ -8,7 +8,7 @@
 import UIKit
 import BubbleTransition
 
-class StopRunVC: UIViewController {
+class StopRunVC: UIViewController, UIViewControllerTransitioningDelegate{
     
     @IBOutlet weak var distanceLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
@@ -16,9 +16,7 @@ class StopRunVC: UIViewController {
     @IBOutlet weak var speedLabel: UILabel!
     
     @IBOutlet weak var closeButton: UIButton!
-    weak var interactiveTransition: BubbleInteractiveTransition?
-    
-    
+    let transition = BubbleTransition()
     
     var run: Run!
     
@@ -41,9 +39,27 @@ class StopRunVC: UIViewController {
         speedLabel.text = "\(formattedspeed)"
     }
     
-    @IBAction func closeAction(_ sender: AnyObject) {
-      self.dismiss(animated: true, completion: nil)
-      interactiveTransition?.finish()
+    public override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+      let controller = segue.destination
+      controller.transitioningDelegate = self
+      controller.modalPresentationCapturesStatusBarAppearance = true
+      controller.modalPresentationStyle = .custom
     }
-    
-}
+
+    // MARK: UIViewControllerTransitioningDelegate
+
+    public func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+      transition.transitionMode = .present
+      transition.startingPoint = closeButton.center
+      transition.bubbleColor = closeButton.backgroundColor!
+      return transition
+    }
+
+    public func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+      transition.transitionMode = .dismiss
+      transition.startingPoint = closeButton.center
+      transition.bubbleColor = closeButton.backgroundColor!
+      return transition
+    }
+
+    }
