@@ -15,9 +15,7 @@ class StopRunVC: UIViewController, UIViewControllerTransitioningDelegate{
     @IBOutlet weak var timeLabel:UILabel!
     @IBOutlet weak var speedLabel: UILabel!
     
-    @IBOutlet weak var closeButton: UIButton!
-    let transition = BubbleTransition()
-    
+    @IBOutlet weak var closeButton: UIButton!    
     var run: Run!
     
     override func viewDidLoad() {
@@ -39,27 +37,34 @@ class StopRunVC: UIViewController, UIViewControllerTransitioningDelegate{
         speedLabel.text = "\(formattedspeed)"
     }
     
+    @IBAction func closeAction(_ sender: UIButton) {
+            self.performSegue(withIdentifier: "BackToHome", sender: sender)
+        }
     public override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-      let controller = segue.destination
-      controller.transitioningDelegate = self
-      controller.modalPresentationCapturesStatusBarAppearance = true
-      controller.modalPresentationStyle = .custom
+        if segue.identifier == "BackToHome"{
+            let HomePageVC = segue.destination as! HomePageVC
+            HomePageVC.modalPresentationStyle = .fullScreen
+        }
+//      let controller = segue.destination
+//      controller.transitioningDelegate = self
+//      controller.modalPresentationCapturesStatusBarAppearance = true
+//      controller.modalPresentationStyle = .custom
     }
 
-    // MARK: UIViewControllerTransitioningDelegate
-
-    public func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-      transition.transitionMode = .present
-      transition.startingPoint = closeButton.center
-      transition.bubbleColor = closeButton.backgroundColor!
-      return transition
-    }
-
-    public func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-      transition.transitionMode = .dismiss
-      transition.startingPoint = closeButton.center
-      transition.bubbleColor = closeButton.backgroundColor!
-      return transition
-    }
+//    // MARK: UIViewControllerTransitioningDelegate
+//
+//    public func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+//      transition.transitionMode = .present
+//      transition.startingPoint = closeButton.center
+//      transition.bubbleColor = closeButton.backgroundColor!
+//      return transition
+//    }
+//
+//    public func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+//      transition.transitionMode = .dismiss
+//      transition.startingPoint = closeButton.center
+//      transition.bubbleColor = closeButton.backgroundColor!
+//      return transition
+//    }
 
     }

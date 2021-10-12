@@ -44,6 +44,7 @@
                             <constraint firstItem="tAn-jA-vJn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E1z-hM-pzh"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="kop-bN-yFo"/>
                     <connections>
                         <outlet property="RunButton" destination="tAn-jA-vJn" id="tBL-Gh-6yd"/>
                     </connections>
@@ -285,8 +286,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="closeAction:" destination="PSq-vi-vtJ" eventType="touchUpInside" id="htQ-Gc-Suq"/>
-                                    <segue destination="BYZ-38-t0r" kind="modal" id="I9F-ft-mGX"/>
+                                    <action selector="closeAction:" destination="PSq-vi-vtJ" eventType="touchUpInside" id="Vgf-4N-6VD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -308,6 +308,7 @@
                         <outlet property="distanceLabel" destination="ZOm-w9-omt" id="mLd-4p-9i5"/>
                         <outlet property="speedLabel" destination="6nv-HM-4gL" id="J2S-Cs-8dm"/>
                         <outlet property="timeLabel" destination="AKr-vD-Stm" id="cQg-xN-9w9"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="BackToHome" id="Pjm-ux-QpQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xvh-vJ-HPR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
