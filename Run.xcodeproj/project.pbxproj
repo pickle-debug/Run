@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		045CE36A2711EFC600878F95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045CE3692711EFC600878F95 /* Assets.xcassets */; };
 		04C7986F2713C0DD000A98EC /* RunPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7986E2713C0DD000A98EC /* RunPageVC.swift */; };
+		04C9AA8A2715FCAF00002558 /* Collocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9AA892715FCAF00002558 /* Collocation.swift */; };
+		04C9AA8C271601FC00002558 /* RecordPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9AA8B271601FC00002558 /* RecordPageVC.swift */; };
+		04C9AA8E2716029D00002558 /* CollocationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9AA8D2716029D00002558 /* CollocationStatus.swift */; };
 		04CE07BD271459CA0080DCBB /* StopRunVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE07BC271459CA0080DCBB /* StopRunVC.swift */; };
 		059278E438D39681B073EEFA /* Pods_RunTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0BBA4EAA6E65CCD8B076D46 /* Pods_RunTests.framework */; };
 		2DFF1A54E85FAE2A49C6662F /* Pods_Run.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B86E00671E5BC17B4030E6D /* Pods_Run.framework */; };
@@ -19,9 +22,6 @@
 		F8A5A38326FF0DDD000446D3 /* StoryboardSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A5A37F26FF0DDD000446D3 /* StoryboardSupport.swift */; };
 		F8A5A38726FF0E65000446D3 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A5A38526FF0E65000446D3 /* CoreDataStack.swift */; };
 		F8A5A38B26FF0E90000446D3 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F8A5A38926FF0E90000446D3 /* Model.xcdatamodeld */; };
-		F8A5A39126FF1000000446D3 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A5A38D26FF1000000446D3 /* FirstViewController.swift */; };
-		F8A5A39226FF1000000446D3 /* RunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A5A38E26FF1000000446D3 /* RunViewController.swift */; };
-		F8A5A39326FF1000000446D3 /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A5A38F26FF1000000446D3 /* EndViewController.swift */; };
 		F8A5A39626FF1050000446D3 /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A5A39526FF1050000446D3 /* HomePageVC.swift */; };
 		F8A5A3DB26FF58C7000446D3 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F8A5A3DA26FF58C7000446D3 /* .gitignore */; };
 		F8F77B8826FEDB1700D653AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F77B8726FEDB1700D653AF /* AppDelegate.swift */; };
@@ -54,6 +54,9 @@
 		024749D8211F8F18A2AC0B1A /* Pods-RunTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunTests.release.xcconfig"; path = "Target Support Files/Pods-RunTests/Pods-RunTests.release.xcconfig"; sourceTree = "<group>"; };
 		045CE3692711EFC600878F95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04C7986E2713C0DD000A98EC /* RunPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunPageVC.swift; sourceTree = "<group>"; };
+		04C9AA892715FCAF00002558 /* Collocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collocation.swift; sourceTree = "<group>"; };
+		04C9AA8B271601FC00002558 /* RecordPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordPageVC.swift; sourceTree = "<group>"; };
+		04C9AA8D2716029D00002558 /* CollocationStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollocationStatus.swift; sourceTree = "<group>"; };
 		04CE07BC271459CA0080DCBB /* StopRunVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopRunVC.swift; sourceTree = "<group>"; };
 		4B86E00671E5BC17B4030E6D /* Pods_Run.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Run.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C4C75B9D6AFA0E2950906F2 /* Pods-Run-RunUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Run-RunUITests.debug.xcconfig"; path = "Target Support Files/Pods-Run-RunUITests/Pods-Run-RunUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -69,9 +72,6 @@
 		F8A5A37F26FF0DDD000446D3 /* StoryboardSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardSupport.swift; sourceTree = "<group>"; };
 		F8A5A38526FF0E65000446D3 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		F8A5A38A26FF0E90000446D3 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		F8A5A38D26FF1000000446D3 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		F8A5A38E26FF1000000446D3 /* RunViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunViewController.swift; sourceTree = "<group>"; };
-		F8A5A38F26FF1000000446D3 /* EndViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
 		F8A5A39526FF1050000446D3 /* HomePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
 		F8A5A3DA26FF58C7000446D3 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		F8F77B8426FEDB1700D653AF /* Run.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Run.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +115,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04C9AA882715FC8D00002558 /* Collocation */ = {
+			isa = PBXGroup;
+			children = (
+				04C9AA892715FCAF00002558 /* Collocation.swift */,
+				04C9AA8D2716029D00002558 /* CollocationStatus.swift */,
+			);
+			name = Collocation;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		940C7E51F39FA1583294CC0C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,12 +171,10 @@
 		F8A5A38C26FF1000000446D3 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				F8A5A38D26FF1000000446D3 /* FirstViewController.swift */,
-				F8A5A38E26FF1000000446D3 /* RunViewController.swift */,
-				F8A5A38F26FF1000000446D3 /* EndViewController.swift */,
 				04CE07BC271459CA0080DCBB /* StopRunVC.swift */,
 				F8A5A39526FF1050000446D3 /* HomePageVC.swift */,
 				04C7986E2713C0DD000A98EC /* RunPageVC.swift */,
+				04C9AA8B271601FC00002558 /* RecordPageVC.swift */,
 			);
 			name = ViewController;
 			path = ViewController/ViewController;
@@ -210,6 +218,7 @@
 				F8A5A39926FF1107000446D3 /* View */,
 				F8A5A38C26FF1000000446D3 /* ViewController */,
 				F8A5A38426FF0E65000446D3 /* Model */,
+				04C9AA882715FC8D00002558 /* Collocation */,
 				F8A5A37B26FF0DDD000446D3 /* Supporting Files */,
 				F8F77B8726FEDB1700D653AF /* AppDelegate.swift */,
 				F8F77B8926FEDB1700D653AF /* SceneDelegate.swift */,
@@ -475,18 +484,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8A5A39326FF1000000446D3 /* EndViewController.swift in Sources */,
 				F8A5A38726FF0E65000446D3 /* CoreDataStack.swift in Sources */,
 				F8F77B8826FEDB1700D653AF /* AppDelegate.swift in Sources */,
 				F8F77B8A26FEDB1700D653AF /* SceneDelegate.swift in Sources */,
+				04C9AA8A2715FCAF00002558 /* Collocation.swift in Sources */,
 				F8A5A38126FF0DDD000446D3 /* FormatDisplay.swift in Sources */,
 				F8A5A38026FF0DDD000446D3 /* UnitExtensions.swift in Sources */,
-				F8A5A39126FF1000000446D3 /* FirstViewController.swift in Sources */,
 				F8A5A38B26FF0E90000446D3 /* Model.xcdatamodeld in Sources */,
+				04C9AA8E2716029D00002558 /* CollocationStatus.swift in Sources */,
+				04C9AA8C271601FC00002558 /* RecordPageVC.swift in Sources */,
 				F8A5A38226FF0DDD000446D3 /* MulticolorPolyline.swift in Sources */,
 				04CE07BD271459CA0080DCBB /* StopRunVC.swift in Sources */,
 				04C7986F2713C0DD000A98EC /* RunPageVC.swift in Sources */,
-				F8A5A39226FF1000000446D3 /* RunViewController.swift in Sources */,
 				F8A5A38326FF0DDD000446D3 /* StoryboardSupport.swift in Sources */,
 				F8A5A39626FF1050000446D3 /* HomePageVC.swift in Sources */,
 			);
