@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		045CE36A2711EFC600878F95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045CE3692711EFC600878F95 /* Assets.xcassets */; };
+		047833852716B73900392D4C /* RecordDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047833842716B73900392D4C /* RecordDetailsVC.swift */; };
+		047833872716C00D00392D4C /* RecordTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047833862716C00D00392D4C /* RecordTableVC.swift */; };
+		04A1C381271723AF008BE423 /* RecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A1C380271723AF008BE423 /* RecordCell.swift */; };
 		04C7986F2713C0DD000A98EC /* RunPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7986E2713C0DD000A98EC /* RunPageVC.swift */; };
 		04C9AA8A2715FCAF00002558 /* Collocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9AA892715FCAF00002558 /* Collocation.swift */; };
-		04C9AA8C271601FC00002558 /* RecordPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9AA8B271601FC00002558 /* RecordPageVC.swift */; };
 		04C9AA8E2716029D00002558 /* CollocationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9AA8D2716029D00002558 /* CollocationStatus.swift */; };
 		04CE07BD271459CA0080DCBB /* StopRunVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE07BC271459CA0080DCBB /* StopRunVC.swift */; };
 		059278E438D39681B073EEFA /* Pods_RunTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0BBA4EAA6E65CCD8B076D46 /* Pods_RunTests.framework */; };
@@ -53,9 +55,11 @@
 /* Begin PBXFileReference section */
 		024749D8211F8F18A2AC0B1A /* Pods-RunTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunTests.release.xcconfig"; path = "Target Support Files/Pods-RunTests/Pods-RunTests.release.xcconfig"; sourceTree = "<group>"; };
 		045CE3692711EFC600878F95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		047833842716B73900392D4C /* RecordDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordDetailsVC.swift; sourceTree = "<group>"; };
+		047833862716C00D00392D4C /* RecordTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTableVC.swift; sourceTree = "<group>"; };
+		04A1C380271723AF008BE423 /* RecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordCell.swift; sourceTree = "<group>"; };
 		04C7986E2713C0DD000A98EC /* RunPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunPageVC.swift; sourceTree = "<group>"; };
 		04C9AA892715FCAF00002558 /* Collocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collocation.swift; sourceTree = "<group>"; };
-		04C9AA8B271601FC00002558 /* RecordPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordPageVC.swift; sourceTree = "<group>"; };
 		04C9AA8D2716029D00002558 /* CollocationStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollocationStatus.swift; sourceTree = "<group>"; };
 		04CE07BC271459CA0080DCBB /* StopRunVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopRunVC.swift; sourceTree = "<group>"; };
 		4B86E00671E5BC17B4030E6D /* Pods_Run.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Run.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,14 +119,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04C9AA882715FC8D00002558 /* Collocation */ = {
+		04A1C37B2717133B008BE423 /* Record */ = {
 			isa = PBXGroup;
 			children = (
 				04C9AA892715FCAF00002558 /* Collocation.swift */,
 				04C9AA8D2716029D00002558 /* CollocationStatus.swift */,
+				04A1C380271723AF008BE423 /* RecordCell.swift */,
 			);
-			name = Collocation;
-			path = ..;
+			path = Record;
 			sourceTree = "<group>";
 		};
 		940C7E51F39FA1583294CC0C /* Frameworks */ = {
@@ -174,7 +178,8 @@
 				04CE07BC271459CA0080DCBB /* StopRunVC.swift */,
 				F8A5A39526FF1050000446D3 /* HomePageVC.swift */,
 				04C7986E2713C0DD000A98EC /* RunPageVC.swift */,
-				04C9AA8B271601FC00002558 /* RecordPageVC.swift */,
+				047833842716B73900392D4C /* RecordDetailsVC.swift */,
+				047833862716C00D00392D4C /* RecordTableVC.swift */,
 			);
 			name = ViewController;
 			path = ViewController/ViewController;
@@ -183,6 +188,7 @@
 		F8A5A39926FF1107000446D3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F8F77B9226FEDB1D00D653AF /* LaunchScreen.storyboard */,
 				F8F77B8D26FEDB1700D653AF /* Main.storyboard */,
 			);
 			path = View;
@@ -218,11 +224,10 @@
 				F8A5A39926FF1107000446D3 /* View */,
 				F8A5A38C26FF1000000446D3 /* ViewController */,
 				F8A5A38426FF0E65000446D3 /* Model */,
-				04C9AA882715FC8D00002558 /* Collocation */,
+				04A1C37B2717133B008BE423 /* Record */,
 				F8A5A37B26FF0DDD000446D3 /* Supporting Files */,
 				F8F77B8726FEDB1700D653AF /* AppDelegate.swift */,
 				F8F77B8926FEDB1700D653AF /* SceneDelegate.swift */,
-				F8F77B9226FEDB1D00D653AF /* LaunchScreen.storyboard */,
 				F8F77B9526FEDB1D00D653AF /* Info.plist */,
 			);
 			path = Run;
@@ -490,9 +495,11 @@
 				04C9AA8A2715FCAF00002558 /* Collocation.swift in Sources */,
 				F8A5A38126FF0DDD000446D3 /* FormatDisplay.swift in Sources */,
 				F8A5A38026FF0DDD000446D3 /* UnitExtensions.swift in Sources */,
+				047833872716C00D00392D4C /* RecordTableVC.swift in Sources */,
 				F8A5A38B26FF0E90000446D3 /* Model.xcdatamodeld in Sources */,
 				04C9AA8E2716029D00002558 /* CollocationStatus.swift in Sources */,
-				04C9AA8C271601FC00002558 /* RecordPageVC.swift in Sources */,
+				047833852716B73900392D4C /* RecordDetailsVC.swift in Sources */,
+				04A1C381271723AF008BE423 /* RecordCell.swift in Sources */,
 				F8A5A38226FF0DDD000446D3 /* MulticolorPolyline.swift in Sources */,
 				04CE07BD271459CA0080DCBB /* StopRunVC.swift in Sources */,
 				04C7986F2713C0DD000A98EC /* RunPageVC.swift in Sources */,
