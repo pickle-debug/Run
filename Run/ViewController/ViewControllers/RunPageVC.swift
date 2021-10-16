@@ -16,7 +16,10 @@ class RunPageVC: UIViewController {
     @IBOutlet weak var distanceLabel: UILabel!
     
 
-    @IBOutlet weak var controlButton: UIButton!
+    @IBOutlet weak var pauseButton: UIButton!
+    @IBOutlet weak var continueButton: UIButton!
+    @IBOutlet weak var endButton: UIButton!
+    @IBOutlet weak var buttonStackView: UIStackView!
     weak var interactiveTransition: BubbleInteractiveTransition?
 
     private var run: Run!
@@ -30,27 +33,35 @@ class RunPageVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         startRun()
+        buttonStackView.isHidden = true
+        
     }
-    @IBAction func flipButton() {
+    @IBAction func pause() {
             stopRun()
-            controlButton.setTitle("跑步", for: .normal)
-            let alertController = UIAlertController(title: "跑完了？",
-                                                    message: "你想结束跑步吗？",
-                                                    preferredStyle: .actionSheet)
-            alertController.addAction(UIAlertAction(title: "取消", style: .cancel))
-            alertController.addAction(UIAlertAction(title: "保存", style: .default) { _ in
-                self.stopRun()
-                self.saveRun()
-                self.performSegue(withIdentifier: .details, sender: nil)
-            })
-            alertController.addAction(UIAlertAction(title: "Discard", style: .destructive) { _ in
-                self.stopRun()
-                _ = self.navigationController?.popToRootViewController(animated: true)
-            })
-
-            present(alertController, animated: true)
+            pauseButton.isHidden = true
+        buttonStackView.isHidden = false
     }
-    
+        
+    @IBAction func contine(){
+        
+    }
+    @IBAction func end(){
+                    let alertController = UIAlertController(title: "跑完了？",
+                                                            message: "你想结束跑步吗？",
+                                                            preferredStyle: .actionSheet)
+                    alertController.addAction(UIAlertAction(title: "取消", style: .cancel))
+                    alertController.addAction(UIAlertAction(title: "保存", style: .default) { _ in
+                        self.stopRun()
+                        self.saveRun()
+                        self.performSegue(withIdentifier: .details, sender: nil)
+                    })
+                    alertController.addAction(UIAlertAction(title: "Discard", style: .destructive) { _ in
+                        self.stopRun()
+                        _ = self.navigationController?.popToRootViewController(animated: true)
+                    })
+        
+                    present(alertController, animated: true)
+            }
     private func startRun(){
         seconds = 0
         distance = Measurement(value: 0, unit: UnitLength.meters)
