@@ -29,6 +29,7 @@ class RecordTableVC: UITableViewController {
     }
 }
 
+//table view data source
 
 extension RecordTableVC {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -44,7 +45,7 @@ extension RecordTableVC {
 
 extension RecordTableVC: SegueHandlerType {
     enum SegueIdentifier: String {
-        case details = "RecordDetailsVC"
+        case details = "RecordDetailsVC" 
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segueIdentifier(for: segue) {

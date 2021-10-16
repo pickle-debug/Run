@@ -29,19 +29,19 @@ extension UITableViewCell: StoryboardIdentifiable { }
 
 
 extension UITableView {
-    func dequeResuableCell<T: UITableViewCell>(for indexPath: IndexPath) -> T {
-        guard let cell = dequeueReusableCell(withIdentifier: T.storyboardIdentifier, for: indexPath) as? T else {
-            fatalError("无法找到与 \(T.storyboardIdentifier) 相关联的table view cell")
-        }
-        return cell
+  func dequeueReusableCell<T: UITableViewCell>(for indexPath: IndexPath) -> T {
+    guard let cell = dequeueReusableCell(withIdentifier: T.storyboardIdentifier, for: indexPath) as? T else {
+      fatalError("Could not find table view cell with identifier \(T.storyboardIdentifier)")
     }
-    
-    func cellForRow<T: UITableViewCell>(at indexPath: IndexPath) -> T {
-        guard let cell = cellForRow(at: indexPath) as? T else {
-            fatalError("无法得到\(T.self)事件的单位格")
-        }
-        return cell
+    return cell
+  }
+  
+  func cellForRow<T: UITableViewCell>(at indexPath: IndexPath) -> T {
+    guard let cell = cellForRow(at: indexPath) as? T else {
+      fatalError("Could not get cell as type \(T.self)")
     }
+    return cell
+  }
 }
 
 

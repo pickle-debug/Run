@@ -11,6 +11,7 @@
 		047833852716B73900392D4C /* RecordDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047833842716B73900392D4C /* RecordDetailsVC.swift */; };
 		047833872716C00D00392D4C /* RecordTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047833862716C00D00392D4C /* RecordTableVC.swift */; };
 		04A1C381271723AF008BE423 /* RecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A1C380271723AF008BE423 /* RecordCell.swift */; };
+		04B6A8A2271980220026E7F0 /* badges.txt in Resources */ = {isa = PBXBuildFile; fileRef = 04B6A8A1271980220026E7F0 /* badges.txt */; };
 		04C7986F2713C0DD000A98EC /* RunPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7986E2713C0DD000A98EC /* RunPageVC.swift */; };
 		04C9AA8A2715FCAF00002558 /* Collocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9AA892715FCAF00002558 /* Collocation.swift */; };
 		04C9AA8E2716029D00002558 /* CollocationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9AA8D2716029D00002558 /* CollocationStatus.swift */; };
@@ -58,6 +59,7 @@
 		047833842716B73900392D4C /* RecordDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordDetailsVC.swift; sourceTree = "<group>"; };
 		047833862716C00D00392D4C /* RecordTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTableVC.swift; sourceTree = "<group>"; };
 		04A1C380271723AF008BE423 /* RecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordCell.swift; sourceTree = "<group>"; };
+		04B6A8A1271980220026E7F0 /* badges.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = badges.txt; path = ../../../../badges.txt; sourceTree = "<group>"; };
 		04C7986E2713C0DD000A98EC /* RunPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunPageVC.swift; sourceTree = "<group>"; };
 		04C9AA892715FCAF00002558 /* Collocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collocation.swift; sourceTree = "<group>"; };
 		04C9AA8D2716029D00002558 /* CollocationStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollocationStatus.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 		04A1C37B2717133B008BE423 /* Record */ = {
 			isa = PBXGroup;
 			children = (
+				04B6A8A1271980220026E7F0 /* badges.txt */,
 				04C9AA892715FCAF00002558 /* Collocation.swift */,
 				04C9AA8D2716029D00002558 /* CollocationStatus.swift */,
 				04A1C380271723AF008BE423 /* RecordCell.swift */,
@@ -163,16 +166,16 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F8A5A38426FF0E65000446D3 /* Model */ = {
+		F8A5A38426FF0E65000446D3 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
 				F8A5A38526FF0E65000446D3 /* CoreDataStack.swift */,
 				F8A5A38926FF0E90000446D3 /* Model.xcdatamodeld */,
 			);
-			path = Model;
+			path = CoreData;
 			sourceTree = "<group>";
 		};
-		F8A5A38C26FF1000000446D3 /* ViewController */ = {
+		F8A5A38C26FF1000000446D3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				04CE07BC271459CA0080DCBB /* StopRunVC.swift */,
@@ -181,13 +184,14 @@
 				047833842716B73900392D4C /* RecordDetailsVC.swift */,
 				047833862716C00D00392D4C /* RecordTableVC.swift */,
 			);
-			name = ViewController;
-			path = ViewController/ViewController;
+			name = ViewControllers;
+			path = ViewController/ViewControllers;
 			sourceTree = "<group>";
 		};
 		F8A5A39926FF1107000446D3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				045CE3692711EFC600878F95 /* Assets.xcassets */,
 				F8F77B9226FEDB1D00D653AF /* LaunchScreen.storyboard */,
 				F8F77B8D26FEDB1700D653AF /* Main.storyboard */,
 			);
@@ -220,10 +224,9 @@
 		F8F77B8626FEDB1700D653AF /* Run */ = {
 			isa = PBXGroup;
 			children = (
-				045CE3692711EFC600878F95 /* Assets.xcassets */,
 				F8A5A39926FF1107000446D3 /* View */,
-				F8A5A38C26FF1000000446D3 /* ViewController */,
-				F8A5A38426FF0E65000446D3 /* Model */,
+				F8A5A38C26FF1000000446D3 /* ViewControllers */,
+				F8A5A38426FF0E65000446D3 /* CoreData */,
 				04A1C37B2717133B008BE423 /* Record */,
 				F8A5A37B26FF0DDD000446D3 /* Supporting Files */,
 				F8F77B8726FEDB1700D653AF /* AppDelegate.swift */,
@@ -362,6 +365,7 @@
 				F8F77B9426FEDB1D00D653AF /* LaunchScreen.storyboard in Resources */,
 				045CE36A2711EFC600878F95 /* Assets.xcassets in Resources */,
 				F8F77B8F26FEDB1700D653AF /* Main.storyboard in Resources */,
+				04B6A8A2271980220026E7F0 /* badges.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
