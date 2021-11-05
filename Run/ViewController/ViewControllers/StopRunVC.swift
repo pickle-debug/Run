@@ -21,6 +21,7 @@ class StopRunVC: UIViewController, UIViewControllerTransitioningDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         configureView()
+        self.dismiss(animated: true, completion: nil)
     }
     
     private func configureView() {

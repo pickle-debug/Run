@@ -1,16 +1,20 @@
 PODS:
+  - AnimatedCollectionViewLayout (1.1.0)
   - BubbleTransition (3.2.0)
 
 DEPENDENCIES:
+  - AnimatedCollectionViewLayout
   - BubbleTransition (~> 3.2.0)
 
 SPEC REPOS:
   trunk:
+    - AnimatedCollectionViewLayout
     - BubbleTransition
 
 SPEC CHECKSUMS:
+  AnimatedCollectionViewLayout: 0c1a38c4be115c525c887be183fc91ef65737c5d
   BubbleTransition: 2f112cc19772d9ab199bc850de92f5eb34744bce
 
-PODFILE CHECKSUM: 2ceb4f3c8768f7152c44d011cc10677c0beffaa2
+PODFILE CHECKSUM: 937315ed6bdc18db4e97a99290fcd22dc3e3a5ef
 
 COCOAPODS: 1.11.2

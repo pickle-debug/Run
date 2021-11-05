@@ -10,12 +10,15 @@
 		045CE36A2711EFC600878F95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045CE3692711EFC600878F95 /* Assets.xcassets */; };
 		047833852716B73900392D4C /* RecordDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047833842716B73900392D4C /* RecordDetailsVC.swift */; };
 		047833872716C00D00392D4C /* RecordTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047833862716C00D00392D4C /* RecordTableVC.swift */; };
+		047F2E8A273112390001501C /* RecordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047F2E89273112390001501C /* RecordVC.swift */; };
 		04A1C381271723AF008BE423 /* RecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A1C380271723AF008BE423 /* RecordCell.swift */; };
-		04B6A8A2271980220026E7F0 /* badges.txt in Resources */ = {isa = PBXBuildFile; fileRef = 04B6A8A1271980220026E7F0 /* badges.txt */; };
+		04C429B92734DC15008EE6C8 /* RootVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C429B82734DC15008EE6C8 /* RootVC.swift */; };
+		04C429BB2734E06A008EE6C8 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C429BA2734E06A008EE6C8 /* Constant.swift */; };
 		04C7986F2713C0DD000A98EC /* RunPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7986E2713C0DD000A98EC /* RunPageVC.swift */; };
 		04C9AA8A2715FCAF00002558 /* Collocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9AA892715FCAF00002558 /* Collocation.swift */; };
 		04C9AA8E2716029D00002558 /* CollocationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9AA8D2716029D00002558 /* CollocationStatus.swift */; };
 		04CE07BD271459CA0080DCBB /* StopRunVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE07BC271459CA0080DCBB /* StopRunVC.swift */; };
+		04FF55EF2730FC3300CCC29E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF55EE2730FC3300CCC29E /* Constants.swift */; };
 		059278E438D39681B073EEFA /* Pods_RunTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0BBA4EAA6E65CCD8B076D46 /* Pods_RunTests.framework */; };
 		2DFF1A54E85FAE2A49C6662F /* Pods_Run.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B86E00671E5BC17B4030E6D /* Pods_Run.framework */; };
 		C2F559057BCD0E8CE819F0C7 /* Pods_Run_RunUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B193F4B5B335B1E0B149B9A6 /* Pods_Run_RunUITests.framework */; };
@@ -58,12 +61,16 @@
 		045CE3692711EFC600878F95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		047833842716B73900392D4C /* RecordDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordDetailsVC.swift; sourceTree = "<group>"; };
 		047833862716C00D00392D4C /* RecordTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTableVC.swift; sourceTree = "<group>"; };
+		047F2E89273112390001501C /* RecordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordVC.swift; sourceTree = "<group>"; };
+		047F2E8B273114A20001501C /* badges.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = badges.txt; sourceTree = "<group>"; };
 		04A1C380271723AF008BE423 /* RecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordCell.swift; sourceTree = "<group>"; };
-		04B6A8A1271980220026E7F0 /* badges.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = badges.txt; path = ../../../../badges.txt; sourceTree = "<group>"; };
+		04C429B82734DC15008EE6C8 /* RootVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootVC.swift; sourceTree = "<group>"; };
+		04C429BA2734E06A008EE6C8 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		04C7986E2713C0DD000A98EC /* RunPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunPageVC.swift; sourceTree = "<group>"; };
 		04C9AA892715FCAF00002558 /* Collocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collocation.swift; sourceTree = "<group>"; };
 		04C9AA8D2716029D00002558 /* CollocationStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollocationStatus.swift; sourceTree = "<group>"; };
 		04CE07BC271459CA0080DCBB /* StopRunVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopRunVC.swift; sourceTree = "<group>"; };
+		04FF55EE2730FC3300CCC29E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4B86E00671E5BC17B4030E6D /* Pods_Run.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Run.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C4C75B9D6AFA0E2950906F2 /* Pods-Run-RunUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Run-RunUITests.debug.xcconfig"; path = "Target Support Files/Pods-Run-RunUITests/Pods-Run-RunUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		750844E22D5C0CDE177CD11F /* Pods-Run.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Run.release.xcconfig"; path = "Target Support Files/Pods-Run/Pods-Run.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,12 +131,19 @@
 		04A1C37B2717133B008BE423 /* Record */ = {
 			isa = PBXGroup;
 			children = (
-				04B6A8A1271980220026E7F0 /* badges.txt */,
 				04C9AA892715FCAF00002558 /* Collocation.swift */,
 				04C9AA8D2716029D00002558 /* CollocationStatus.swift */,
 				04A1C380271723AF008BE423 /* RecordCell.swift */,
 			);
 			path = Record;
+			sourceTree = "<group>";
+		};
+		04FF55ED2730FC0D00CCC29E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				04FF55EE2730FC3300CCC29E /* Constants.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		940C7E51F39FA1583294CC0C /* Frameworks */ = {
@@ -158,10 +172,12 @@
 		F8A5A37B26FF0DDD000446D3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				047F2E8B273114A20001501C /* badges.txt */,
 				F8A5A37C26FF0DDD000446D3 /* UnitExtensions.swift */,
 				F8A5A37D26FF0DDD000446D3 /* FormatDisplay.swift */,
 				F8A5A37E26FF0DDD000446D3 /* MulticolorPolyline.swift */,
 				F8A5A37F26FF0DDD000446D3 /* StoryboardSupport.swift */,
+				04C429BA2734E06A008EE6C8 /* Constant.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -183,6 +199,8 @@
 				04C7986E2713C0DD000A98EC /* RunPageVC.swift */,
 				047833842716B73900392D4C /* RecordDetailsVC.swift */,
 				047833862716C00D00392D4C /* RecordTableVC.swift */,
+				047F2E89273112390001501C /* RecordVC.swift */,
+				04C429B82734DC15008EE6C8 /* RootVC.swift */,
 			);
 			name = ViewControllers;
 			path = ViewController/ViewControllers;
@@ -224,6 +242,7 @@
 		F8F77B8626FEDB1700D653AF /* Run */ = {
 			isa = PBXGroup;
 			children = (
+				04FF55ED2730FC0D00CCC29E /* Common */,
 				F8A5A39926FF1107000446D3 /* View */,
 				F8A5A38C26FF1000000446D3 /* ViewControllers */,
 				F8A5A38426FF0E65000446D3 /* CoreData */,
@@ -365,7 +384,6 @@
 				F8F77B9426FEDB1D00D653AF /* LaunchScreen.storyboard in Resources */,
 				045CE36A2711EFC600878F95 /* Assets.xcassets in Resources */,
 				F8F77B8F26FEDB1700D653AF /* Main.storyboard in Resources */,
-				04B6A8A2271980220026E7F0 /* badges.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,19 +512,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8A5A38726FF0E65000446D3 /* CoreDataStack.swift in Sources */,
+				04FF55EF2730FC3300CCC29E /* Constants.swift in Sources */,
 				F8F77B8826FEDB1700D653AF /* AppDelegate.swift in Sources */,
 				F8F77B8A26FEDB1700D653AF /* SceneDelegate.swift in Sources */,
 				04C9AA8A2715FCAF00002558 /* Collocation.swift in Sources */,
 				F8A5A38126FF0DDD000446D3 /* FormatDisplay.swift in Sources */,
 				F8A5A38026FF0DDD000446D3 /* UnitExtensions.swift in Sources */,
+				04C429BB2734E06A008EE6C8 /* Constant.swift in Sources */,
 				047833872716C00D00392D4C /* RecordTableVC.swift in Sources */,
 				F8A5A38B26FF0E90000446D3 /* Model.xcdatamodeld in Sources */,
 				04C9AA8E2716029D00002558 /* CollocationStatus.swift in Sources */,
 				047833852716B73900392D4C /* RecordDetailsVC.swift in Sources */,
+				04C429B92734DC15008EE6C8 /* RootVC.swift in Sources */,
 				04A1C381271723AF008BE423 /* RecordCell.swift in Sources */,
 				F8A5A38226FF0DDD000446D3 /* MulticolorPolyline.swift in Sources */,
 				04CE07BD271459CA0080DCBB /* StopRunVC.swift in Sources */,
 				04C7986F2713C0DD000A98EC /* RunPageVC.swift in Sources */,
+				047F2E8A273112390001501C /* RecordVC.swift in Sources */,
 				F8A5A38326FF0DDD000446D3 /* StoryboardSupport.swift in Sources */,
 				F8A5A39626FF1050000446D3 /* HomePageVC.swift in Sources */,
 			);

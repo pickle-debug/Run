@@ -32,35 +32,44 @@ class RunPageVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.dismiss(animated: true, completion: nil)
         startRun()
         buttonStackView.isHidden = true
         
     }
     @IBAction func pause() {
             stopRun()
+        timer?.invalidate()
             pauseButton.isHidden = true
         buttonStackView.isHidden = false
     }
         
     @IBAction func contine(){
-        
+        timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
+            self.eachSecond()
+        }
+        pauseButton.isHidden = false
+        buttonStackView.isHidden = true
     }
     @IBAction func end(){
-                    let alertController = UIAlertController(title: "跑完了？",
-                                                            message: "你想结束跑步吗？",
-                                                            preferredStyle: .actionSheet)
-                    alertController.addAction(UIAlertAction(title: "取消", style: .cancel))
-                    alertController.addAction(UIAlertAction(title: "保存", style: .default) { _ in
-                        self.stopRun()
-                        self.saveRun()
-                        self.performSegue(withIdentifier: .details, sender: nil)
-                    })
-                    alertController.addAction(UIAlertAction(title: "Discard", style: .destructive) { _ in
-                        self.stopRun()
-                        _ = self.navigationController?.popToRootViewController(animated: true)
-                    })
-        
-                    present(alertController, animated: true)
+        self.saveRun()
+//        self.performSegue(withIdentifier: .details, sender: nil)
+        self.dismiss(animated: true, completion: nil)
+        interactiveTransition?.finish()
+//                    let alertController = UIAlertController(title: "跑完了？",
+//                                                            message: "你想结束跑步吗？",
+//                                                            preferredStyle: .actionSheet)
+//                    alertController.addAction(UIAlertAction(title: "取消", style: .cancel))
+//                    alertController.addAction(UIAlertAction(title: "保存", style: .default) { _ in
+//                        self.saveRun()
+//                        self.performSegue(withIdentifier: .details, sender: nil)
+//                    })
+//                    alertController.addAction(UIAlertAction(title: "Discard", style: .destructive) { _ in
+//                        self.stopRun()
+//                        _ = self.navigationController?.popToRootViewController(animated: true)
+//                    })
+//
+//                    present(alertController, animated: true)
             }
     private func startRun(){
         seconds = 0
@@ -123,9 +132,11 @@ class RunPageVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
       super.viewWillAppear(animated)
+      UIApplication.shared.setStatusBarStyle(.lightContent, animated: true)
     }
     override func viewWillDisappear(_ animated: Bool) {
       super.viewWillDisappear(animated)
+      UIApplication.shared.setStatusBarStyle(.default, animated: true)
         
         timer?.invalidate()
         locationManager.stopUpdatingLocation()
@@ -143,23 +154,23 @@ class RunPageVC: UIViewController {
 
 }
 
-extension RunPageVC: SegueHandlerType {
-    enum SegueIdentifier: String {
-        case details = "StopRunVC"
-    }
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        switch segueIdentifier(for: segue) {
-        case .details:
-            let destination = segue.destination as! StopRunVC
-            destination.run = run
-        }
-        if segue.identifier == "StopRunVC"{
-            let StopRunVC = segue.destination as! StopRunVC
-            StopRunVC.modalPresentationStyle = .fullScreen
-        }
-    }
-}
+//extension RunPageVC: SegueHandlerType {
+//    enum SegueIdentifier: String {
+//        case details = "StopRunVC"
+//    }
+//
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        switch segueIdentifier(for: segue) {
+//        case .details:
+//            let destination = segue.destination as! StopRunVC
+//            destination.run = run
+//        }
+//        if segue.identifier == "StopRunVC"{
+//            let StopRunVC = segue.destination as! StopRunVC
+//            StopRunVC.modalPresentationStyle = .fullScreen
+//        }
+//    }
+//}
 
 extension RunPageVC: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {

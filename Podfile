@@ -5,6 +5,7 @@ target 'Run' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   pod 'BubbleTransition', '~> 3.2.0'
+  pod 'AnimatedCollectionViewLayout'
 
 
   # Pods for Run

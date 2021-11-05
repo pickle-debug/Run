@@ -1,0 +1,1 @@
+[{"id":"1","name":"Gench”,”information":"\"The Earth is the cradle of the mind, but one cannot live in a cradle forever.\" -- Konstantin Eduardovich Tsiolkovsky, Russian rocket scientist, 1911","imageName":"earth.jpg","distance”:”2”,”space_distance":"0"}]

@@ -7,6 +7,7 @@
 
 import UIKit
 import BubbleTransition
+import AnimatedCollectionViewLayout
 
 class HomePageVC: UIViewController,UIViewControllerTransitioningDelegate {
     
@@ -15,10 +16,14 @@ class HomePageVC: UIViewController,UIViewControllerTransitioningDelegate {
     let transition = BubbleTransition()
     let interactiveTransition = BubbleInteractiveTransition()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
     }
-
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
        if let controller = segue.destination as? RunPageVC{
@@ -27,6 +32,10 @@ class HomePageVC: UIViewController,UIViewControllerTransitioningDelegate {
             controller.modalPresentationStyle = .custom
             controller.interactiveTransition = interactiveTransition
             interactiveTransition.attach(to: controller)
+        }
+        if let dist = segue.destination as? RecordVC {
+            dist.animator = ((CubeAttributesAnimator(), true, 1, 1))
+            dist.direction = .horizontal
         }
     }
     // MARK: UIViewControllerTransitioningDelegate
